@@ -3,7 +3,7 @@
 set -eo pipefail
 
 # Define the location of our shell script to startup Jupyter notebook
-# server or ipyparallel cluster as necessary.
+# server or ipyparallel cluster as necessary..
 
 WARPDRIVE_SHELL_FILE=${WARPDRIVE_APP_ROOT}/run.sh
 export WARPDRIVE_SHELL_FILE
