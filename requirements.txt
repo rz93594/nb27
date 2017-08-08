@@ -1,3 +1,5 @@
 jupyter
 ipython[notebook]
 ipyparallel
+numpy
+pandas
