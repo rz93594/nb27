@@ -28,3 +28,40 @@ oc new-app --name=%PROJECT% -e APP_SCRIPT="run.sh" ^
 --build-env JUPYTER_NOTEBOOK_PASSWORD=%IPROJECT_PASSWORD% python:2.7~https://github.com/rz93594/nb27.git
 ```
 
+
+### Watch for the project to be deployed and finish before moving to next step:
+
+```
+oc logs -f bc/%PROJECT%
+```
+
+
+### Add the permanence storage for notebooks:
+NOTE:  If using in teams, work with the OpenShift team to mount up a shared repository from outside of OpenShift (like lrlhpc.  
+
+```
+oc volume dc/%PROJECT% --add --mount-path=/opt/app-root/src/notebooks --claim-mode=rwo --claim-size=512Mi -t pvc
+```
+
+### Create the browser URL’s and enable SSL:
+
+```
+oc expose service %PROJECT%
+
+oc patch route/%PROJECT% -p "{\"spec\":{\"tls\":{\"termination\":\"edge\",\"insecureEdgeTerminationPolicy\":\"Redirect\"}}}"
+
+oc get routes
+```
+
+### You are done!
+
+You may now login into the URL provided from the oc get routes command, in this example it would be:
+https://ipynb27-tmwpynotebook.paas-poc.am.lilly.com
+
+### To delete the project: (WARNING!  This will make your data dissapear!)
+
+```
+oc delete project tmwpynotebook
+```
+
+
