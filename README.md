@@ -1,7 +1,7 @@
 ## A container approach to enabled personal IPython notebooks in OpenShift (Windows cmd example)
 
 
-###Assumptions:
+### Assumptions:
 *This uses Python 2.7
 *Store workbooks in the “notebooks” folder otherwise documents will dissappear.
 *This currently uses my public githib repo; this should be moved internally to complete the effort.
