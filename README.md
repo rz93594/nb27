@@ -68,3 +68,9 @@ oc delete project tmwpynotebook
 ```
 
 
+
+### ToDo
+
+* Move repo into the company org and add access instructions 
+* Mount external shared NAS into notebook path
+* Pass uid|gid variables to container for data access
