@@ -59,6 +59,8 @@ You may now login into the URL provided from the oc get routes command, in this 
 
 https://ipynb27-tmwpynotebook.paas-poc.am.lilly.com
 
+If you need to add additional packages, you can add them via !pip install packagename  however the preffered path would be to add the needed package to requirements.txt and redepoy the container.
+
 ### To delete the project: (WARNING!  This will make your data dissapear!)
 
 ```
