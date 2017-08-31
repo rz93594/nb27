@@ -8,3 +8,10 @@
 * Heavy processing needs
 * There is a single user password associated with each workbook so this is not a long-term enterprise offering.
 
+
+`set http_proxy=			#optional
+set http_proxy=			#optional
+set PROJECT=ipynb27           #Change name as appropriate
+set IPRPOJECT_PASSWORD		#this will set notebook passcode
+oc new-project tmwpynotebook  #Change name to your own!
+`
