@@ -5,7 +5,7 @@
 * This uses Python 2.7  
 * Store workbooks in the “notebooks” folder otherwise documents will dissappear.
 * This currently uses my public githib repo; this should be moved internally to complete the effort.
-* Heavy processing needs
+* Unsure about Heavy processing needs (haven't pushed the CPU constraints of openshift
 * There is a single user password associated with each workbook so this is not a long-term enterprise offering.
 
 
@@ -56,6 +56,7 @@ oc get routes
 ### You are done!
 
 You may now login into the URL provided from the oc get routes command, in this example it would be:
+
 https://ipynb27-tmwpynotebook.paas-poc.am.lilly.com
 
 ### To delete the project: (WARNING!  This will make your data dissapear!)
