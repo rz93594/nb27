@@ -5,7 +5,7 @@
 * This uses Python 2.7  
 * Store workbooks in the “notebooks” folder otherwise documents will dissappear.
 * This currently uses my public githib repo; this should be moved internally to complete the effort.
-* Unsure about Heavy processing needs (haven't pushed the CPU constraints of openshift
+* Unsure about Heavy processing needs (haven't pushed the CPU constraints of openshift)
 * There is a single user password associated with each workbook so this is not a long-term enterprise offering.
 
 
